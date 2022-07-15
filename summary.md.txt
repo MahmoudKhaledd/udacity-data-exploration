@@ -1,0 +1,70 @@
+# Mahmoud Khaled
+
+# Ford Go Bike data
+
+## Information about the data
+* Bay Wheels is a regional public bicycle sharing system in California's San Francisco Bay Area. It is operated by Motivate in a partnership with the Metropolitan Transportation Commission and the Bay Area Air Quality Management District. Bay Wheels is the first regional and large-scale bicycle sharing system deployed in California and on the West Coast of the United States. It was established as Bay Area Bike Share in August 2013. As of January 2018, the Bay Wheels system had over 2,600 bicycles in 262 stations across San Francisco, East Bay and San Jose.
+* This data set is taken from https://www.fordgobike.com/system-data and represents trips taken by members of the service for the month of February of 2019.
+* Data consists of info about trips taken by service's members, their types, their age, their gender, stations of starting and ending trips, duration of trips etc.
+
+## Wrangling steps
+1- Remove unnecessary columns
+2- Drop duplicates
+3- Remove outliers (trips over 2 hours)
+4- Get member age from their birth year
+5- Remove outliers (people older than 100 years)
+6- Get duration in minutes from duration in seconds
+
+
+
+## Findings
+### Univariate Exploration
+
+The Trips taken into consideration in the above graph are the trips under two hours as they make up around 99.7% of the total Trips. The reason why I choose them is to make the graph more clear and get rid of outliers.
+We can see that most trips are around 10 minutes and the majority of trips are under 25 minutes!
+
+We can see here that the percentage of younger people are higher. Most of the riders are around their 30's
+
+
+Most popular Start Stations:
+* 1- Market St at 10th St
+* 2- San Francisco Caltrain Station 2
+* 3- Bery St at 4th St
+* 4- Montgomery St BART Station (Market St at 2nd St)
+* 5- Powell St BART Station (Market St at 4th St)
+
+Most popular End Stations:
+* 1- San Francisco Caltrain Station 2
+* 2- Market St at 10th St
+* 3- Montgomery St BART Station (Market St at 2nd St)
+* 4- San Francisco Ferry Building
+* 5- San Francisco Caltrain (Townsend St at 4th St)
+
+
+### Bivariate Exploration
+
+One interesting observation that I did not expect is that people around 80 years old have a higher trip duration than average (around 30 minutes)!
+
+We can clearly see here that most of the users are subscribed.
+
+Customers have a higher average trip duration than subscribers
+
+The majority of bike riders are males, while a very small portion did not want to specify their gender.
+
+Although the majority of riders are males, the females have a higher trip duration that males.
+
+### Multivariate Exploration
+
+Younger people ride for longer durations, and the majority of them are males
+
+Younger people ride for longer durations, and the majority of them are subscribers
+
+## Key insights
+
+* After analyzing the distribution of all the trip durations across all the datasets, we find that most trips are between 5 and 20 minutes long
+* After analyzing the distribution of the ages across the datasets, we find that the majority are younger people who are between 20 and 30 years old
+* Percetages of males are much larger than females, but females for for longer rides!
+
+
+
+
